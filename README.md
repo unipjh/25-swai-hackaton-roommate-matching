@@ -1,6 +1,19 @@
+<!-- problem-first-summary:start -->
+**Huge Problem(Pain Point):** 정적 조건 매칭은 생활 패턴과 사용 후 만족도를 반영하지 못해 개인화가 누적되지 않는다.
 
+**솔루션 한 줄 정의:** 고정 가중치와 사용자별 보정치, 정량·정성 피드백을 결합한 룸메이트 매칭 API다.
 
+**현재 상태:** 해커톤 사례 연구
 
+**문제 해결 중심의 사고 흐름**
+
+1. **관찰** — 흡연 여부 같은 필터만으로는 사용자마다 다른 생활 습관의 중요도와 실제 만족도를 반영할 수 없었다.
+2. **선택** — 설문 기반 W0에 사용자별 dW를 더하고, 만족도와 리뷰를 다음 매칭에 반영했다.
+3. **구현** — Weighted Cosine Similarity, hard constraint, BCE 업데이트와 Gemini 리뷰 분석을 FastAPI로 분리했다.
+4. **검증과 한계** — 해커톤에서 동작 시나리오와 확장 가능한 AI 서버 구조를 제시해 은상을 받았다. 장기 사용자 데이터 검증은 후속 과제다.
+<!-- problem-first-summary:end -->
+
+---
 # 🏠 Roommate Matching & Personalization AI Engine
 
 > **룸메이트 매칭 및 관리 솔루션**
